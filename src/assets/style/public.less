@@ -1,0 +1,41 @@
+/* 列表页样式 */
+.content {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  .item {
+    color: black;
+    width: 100vw;
+    margin-top: 0.4rem;
+    display: flex;
+    border-bottom: 0.03rem solid #ccc;
+    padding-bottom: 0.4rem;
+
+    img {
+      margin: 0 0.3rem;
+      border-radius: 0.1rem;
+    }
+    .text {
+      padding:0.05rem;
+      display: flex;
+      flex: 1;
+      font-display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 0.02rem;
+        &:nth-child(2) {
+          border: 0.03rem solid #ccc;
+          width: 60%;
+          border-radius: 0.1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+ 
+}
